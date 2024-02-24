@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "autoincrement",
+ "creation": "2024-02-24 22:39:24.034926",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "farmer_section",
+  "full_names",
+  "sno",
+  "id_number",
+  "registration_date",
+  "bank_account_number",
+  "bank",
+  "branch",
+  "location",
+  "village",
+  "mobile_number",
+  "route",
+  "is_published",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "farmer_section",
+   "fieldtype": "Section Break",
+   "label": "Farmer"
+  },
+  {
+   "fieldname": "full_names",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Names",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sno",
+   "fieldtype": "Data",
+   "label": "SNO"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID number"
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration date"
+  },
+  {
+   "fieldname": "bank_account_number",
+   "fieldtype": "Data",
+   "label": "Bank Account Number"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Data",
+   "label": "Bank"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is Published"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2024-02-24 22:53:35.522633",
+ "modified_by": "Administrator",
+ "module": "Maziwa",
+ "name": "Farmer",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "farmers",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "website_search_field": "is_published"
+}
