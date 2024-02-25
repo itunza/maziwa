@@ -5,7 +5,5 @@
 from frappe.model.document import Document
 
 
-class Farmer(Document):
-	def before_save(self):
-		self.full_names = f'{self.first_name} {self.middle_name or ""} {self.last_name}'
-		
+class Chiller(Document):
+	pass

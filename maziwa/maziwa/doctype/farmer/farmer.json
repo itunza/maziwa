@@ -1,25 +1,29 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
- "autoname": "autoincrement",
+ "autoname": "field:sno",
  "creation": "2024-02-24 22:39:24.034926",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "farmer_section",
+  "first_name",
+  "middle_name",
+  "last_name",
   "full_names",
   "sno",
   "id_number",
-  "registration_date",
-  "bank_account_number",
-  "bank",
-  "branch",
-  "location",
-  "village",
   "mobile_number",
+  "registration_date",
+  "village",
   "route",
   "is_published",
-  "title"
+  "gps",
+  "column_break_wzhz",
+  "bank",
+  "bank_account_number",
+  "branch",
+  "location"
  ],
  "fields": [
   {
@@ -32,12 +36,13 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Full Names",
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "sno",
    "fieldtype": "Data",
-   "label": "SNO"
+   "label": "SNO",
+   "unique": 1
   },
   {
    "fieldname": "id_number",
@@ -77,11 +82,14 @@
   {
    "fieldname": "mobile_number",
    "fieldtype": "Phone",
-   "label": "Mobile Number"
+   "in_standard_filter": 1,
+   "label": "Mobile Number",
+   "reqd": 1
   },
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Route"
   },
   {
@@ -91,20 +99,37 @@
    "label": "is Published"
   },
   {
-   "fieldname": "title",
+   "fieldname": "column_break_wzhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gps",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "GPS"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
   }
  ],
- "has_web_view": 1,
- "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-02-24 22:53:35.522633",
+ "modified": "2024-02-25 11:44:11.798471",
  "modified_by": "Administrator",
  "module": "Maziwa",
  "name": "Farmer",
- "naming_rule": "Autoincrement",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -124,6 +149,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1,
- "website_search_field": "is_published"
+ "track_changes": 1
 }
